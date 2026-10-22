@@ -656,11 +656,24 @@ footer {
 
 #logout-button {
   padding: 3px 10px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: var(--secondary);
+  color: var(--secondary-text);
   font-size: 0.8rem;
   border-radius: 20px;
+  border: 1px solid var(--secondary-dark);
+  transition: background-color 0.2s, color 0.2s, border 0.2s;
 }
 
 #logout-button:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--secondary-dark);
+  color: var(--secondary-text);
+  border: 1px solid var(--secondary);
+}
+
+.announcement-banner {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
 }
